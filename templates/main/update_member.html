@@ -1,0 +1,12 @@
+{% extends "main/base_generic.html" %}
+
+{% block title %}Mettre à jour un membre{% endblock %}
+
+{% block content %}
+<h2>Mettre à jour un membre</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Mettre à jour</button>
+</form>
+{% endblock %}

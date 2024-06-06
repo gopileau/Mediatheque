@@ -1,0 +1,14 @@
+{% extends "main/base_generic.html" %}
+
+{% block title %}Ajouter un DVD{% endblock %}
+
+{% block content %}
+<h1>Ajouter un DVD</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Ajouter</button>
+</form>
+<a href="{% url 'media_list' %}">Retour à la liste des médias</a>
+{% endblock %}
+

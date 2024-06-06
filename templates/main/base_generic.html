@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur notre médiathèque en ligne</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'media_list' %}">Liste des médias</a></li>
+            <li><a href="{% url 'create_livre' %}">Ajouter un Livre</a></li>
+            <li><a href="{% url 'create_dvd' %}">Ajouter un DVD</a></li>
+            <li><a href="{% url 'create_cd' %}">Ajouter un CD</a></li>
+            <li><a href="{% url 'create_jeu_de_plateau' %}">Ajouter un Jeu de Plateau</a></li>
+            <li><a href="{% url 'create_member' %}">Ajouter un Membre</a></li>
+            <li><a href="{% url 'create_emprunt' %}">Créer un Emprunt</a></li>
+            <li><a href="{% url 'menu_member' %}">Menu Membre</a></li>
+            <li><a href="{% url 'menu_bibliotheque' %}">Menu Bibliotheque</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
+
+
+

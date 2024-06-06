@@ -1,0 +1,13 @@
+{% extends "main/base_generic.html" %}
+
+{% block title %}Liste des membres{% endblock %}
+
+{% block content %}
+<h2>Liste des membres</h2>
+<ul>
+    {% for member in members %}
+    <li>{{ member.user.username }} - {% if member.bloque %}Bloqué{% else %}Actif{% endif %}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+

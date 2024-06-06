@@ -1,0 +1,9 @@
+{% extends "main/base_generic.html" %}
+
+{% block title %}Bienvenue sur notre médiathèque en ligne{% endblock %}
+
+{% block content %}
+<h1>Bienvenue sur notre médiathèque en ligne</h1>
+<p><a href="{% url 'media_list' %}">Liste des médias disponibles</a></p>
+<p><a href="{% 'url 'menu_bibliotheque"}>Menu bibliotheque</a></p>
+{% endblock %}

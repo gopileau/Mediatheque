@@ -1,0 +1,15 @@
+{% extends "main/base_generic.html" %}
+
+{% block title %}Menu Bibliothèque{% endblock %}
+
+{% block content %}
+<h1>Menu Bibliothèque</h1>
+<ul>
+    <li><a href="{% url 'create_livre' %}">Ajouter un Livre</a></li>
+    <li><a href="{% url 'create_dvd' %}">Ajouter un DVD</a></li>
+    <li><a href="{% url 'create_cd' %}">Ajouter un CD</a></li>
+    <li><a href="{% url 'create_jeu_de_plateau' %}">Ajouter un Jeu de Plateau</a></li>
+    <li><a href="{% url 'create_emprunt' %}">Créer un Emprunt</a></li>
+    <li><a href="{% url 'media_list' %}">Liste des Médias</a></li>
+</ul>
+{% endblock %}

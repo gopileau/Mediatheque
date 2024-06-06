@@ -1,0 +1,27 @@
+{% extends "main/base_generic.html" %}
+
+{% block title %}Liste des Emprunts{% endblock %}
+
+{% block content %}
+<h1>Liste des Emprunts</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Membre</th>
+            <th>Media</th>
+            <th>Date d'emprunt</th>
+            <th>Date de retour</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for emprunt in emprunts %}
+        <tr>
+            <td>{{ emprunt.membre.username }}</td>
+            <td>{{ emprunt.media.name }}</td>
+            <td>{{ emprunt.date_emprunt }}</td>
+            <td>{{ emprunt.date_retour }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
