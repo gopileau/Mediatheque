@@ -4,6 +4,11 @@ from .models import Livre, DVD, Cd, JeuDePlateau, Emprunt, Member
 from .forms import LivreForm, DvdForm, CdForm, JeuDePlateauForm, EmpruntForm, MemberForm
 from django.utils import timezone
 from django.shortcuts import render
+from django.conf import settings
+
+def my_view(request):
+    username = settings.USERNAME
+    password = settings.PASSWORD
 
 @login_required
 def menu_member(request):

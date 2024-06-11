@@ -3217,3 +3217,7 @@ NameError: name 'Emprunt' is not defined
 2024-06-06 12:24:06,069 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
 2024-06-06 13:36:40,110 - django.utils.autoreload - INFO - /Users/laura/PycharmProjects/pythonProject/mediatheque/main/views.py changed, reloading.
 2024-06-06 13:36:41,752 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-06-11 09:39:32,622 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-06-11 09:39:44,059 - django.request - WARNING - Not Found: /favicon.ico
+2024-06-11 09:42:23,087 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-06-11 09:48:02,454 - django.utils.autoreload - INFO - Watching for file changes with StatReloader

@@ -14,6 +14,18 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import logging
+import os
+from dotenv import load_dotenv
+
+# Charger les variables d'environnement à partir du fichier .env
+load_dotenv()
+
+# Obtenir les variables d'environnement
+USERNAME = os.getenv('USERNAME_VAR')
+PASSWORD = os.getenv('PASSWORD_VAR')
+
+print(f'Username: {USERNAME}')
+print(f'Password: {PASSWORD}')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
